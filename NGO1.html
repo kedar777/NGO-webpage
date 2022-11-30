@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soham</title>
+</head>
+
+<body>
+    <style>
+        .frame1 {
+
+            width: 100px;
+        }
+
+        .sticky-div {
+            position: fixed;
+            top: 0px;
+            overflow: hidden;
+            background-color: aliceblue;
+        }
+
+        .btn1 {
+            background: transparent;
+            outline: none;
+            border: none;
+            font-size: 20px;
+
+        }
+
+        .btn2 {
+            background: transparent;
+            font-size: 20px;
+            height: 40px;
+            width: 200px;
+            border-color: black;
+
+        }
+
+        .btn3 {
+            background-color: aliceblue;
+            border-radius: 30px;
+            width: 180px;
+            height: 50px;
+            border: none;
+            font-size: 20px;
+
+        }
+
+        .frmae2 {
+            background-image: url('https://csrbox.org/media/org.jpg');
+            height: 500px;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .frame3 {
+            background-color: aqua;
+            height: 300px;
+            width: 900px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px 5px rgb(156, 255, 224);
+            text-align: left;
+        }
+
+        ::placeholder {
+            color: black;
+        }
+
+        .frame6 {
+            width: 400px;
+            height: 500px;
+            background-color: aqua;
+        }
+
+        .line1 {
+            width: 2px;
+            height: 300px;
+            background-color: black;
+        }
+
+        .frame7 {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtPUF_NnFfikfNW3XPP6BLFVup-mlnzNsqRQ&usqp=CAU");
+            height: 300px;
+            background-size: cover;
+        }
+
+        .line2 {
+            width: 2px;
+            height: 150px;
+            background-color: white;
+        }
+
+        .end1 {
+            font-family: 'Lucida Handwriting', Courier, monospace;
+            font-size: 50px;
+        }
+    </style>
+    <div class="sticky-div">
+        <table class="frmae1">
+            <td>
+                <font style="font-size: 30px; ;">
+                    <img src="https://yt3.ggpht.com/ytc/AKedOLR7AMywZvVuuhO69ysnpOudyFjQimos2U20lUT4=s900-c-k-c0x00ffffff-no-rj"
+                        width="50px" height="50px" alt="">
+                    UNITTED PEOPLES'S FOUNDATION
+                </font>
+                &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+                &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            </td>
+            <td>
+                <button class="btn1">Home</button>
+                &emsp; &emsp;
+            </td>
+            <td>
+                <button class="btn1">Campaigns</button>
+                &emsp; &emsp;
+            </td>
+            <td>
+                <button class="btn1">Awards</button>
+                &emsp; &emsp;
+            </td>
+            <td>
+                <button class="btn1">Contact</button>
+                &emsp; &emsp;
+            </td>
+        </table>
+    </div>
+    <div class="frmae2">
+
+        <div align="right">
+
+            <font style=" font-family: 'Diplomata';font-size: 35px;" color="white">
+                When we give cheerfully
+                and accept gratefully,<br> everyone is blessed.
+                &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp;
+            </font>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <img src="data:image/png;base64,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"
+                alt="" width="200px" height="200px">&emsp;
+
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div class="frame3">
+                <br>
+                &emsp; &emsp; &emsp;
+
+                <font style="font-size: 30px;">
+                    Help To Save Children-
+
+                </font>
+                <br>
+                <br>
+                <br>
+                &emsp; &emsp; &emsp;
+                <input class="btn2" type="text" placeholder="Name">
+                &emsp; &emsp;
+                <input class="btn2" type="email" placeholder="Email">
+                &emsp; &emsp;
+                <input class="btn2" type="number" placeholder="Mobail number">
+                <br>
+                <br>
+                &emsp; &emsp;&emsp;
+                <input class="btn2" type="number" placeholder="Amount">
+                &emsp;&emsp; &ensp;
+                <select class="btn2" name="language">
+                    <option value="indian">Indian</option>
+                    <option value="nepali">Foreign</option>
+                </select>
+                &emsp; &emsp; &emsp;
+                <button type="submit" class="btn3">Donate Now</button>
+
+
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+
+        <br>
+        <br>
+        <br>
+
+        <div>
+
+
+            <font style="font-size: 60px;">
+                <srtong>ABOUT</srtong>
+            </font>
+            <br>
+            <br>
+            <font style="font-size: 40px;">
+                Who We Are-
+            </font>
+            <br>
+            <br>
+            <font style="font-size: 26px;">
+                &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                UNITTED PEOPLES'S FOUNDATION is an NGO in India based in LATUR. Established in 2010, we have worked
+                extensively for more than three 3 decades to reach out and rehabilitate differently able people from the
+                underprivileged segment. Narayan Seva Sansthan works with 480 branches in India and 49 branches abroad
+                while focusing on alleviating disabilities and providing proper Physical, Social, and Economic
+                Rehabilitation to the needy. We do this through well-planned and comprehensive programs in health,
+                education, rehabilitation, corrective surgeries, and helping aid distribution making us the best charity
+                organization in India.
+
+
+            </font>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+
+                            <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/global-help-4531317-3755046.png"
+                                width="70px" height="60px" alt=""> <br>
+                            <font style="font-size: 15px;">
+                                Total Operation <br>
+                                of Differently Abled
+                            </font>
+                        </td>
+                        <td>&emsp; &emsp; &emsp;&emsp; &emsp;
+                            <img src="https://cdn.iconscout.com/icon/free/png-64/aids-ribbon-cure-medical-sida-virus-hiv-6-20119.png"
+                                width="70px" height="60px" alt=""> <br>
+                            <font style="font-size: 15px;">
+                                &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; Aids and <br>
+                                &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;Appliances
+
+                            </font>
+                        </td>
+                        <td>
+                            &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;
+                            <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/skill-1402118-1186577.png"
+                                width="70px" height="60px" alt=""> <br>
+                            <font style="font-size:15px;">
+                                &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;Skill <br>
+                                &emsp; &emsp; &emsp;&emsp; &emsp; &emsp; Development</font>
+                        </td>
+                        <td>
+                            &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;
+                            <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/unboxing-4363263-3618143.png"
+                                width="70px" height="60px" alt=""> <br>
+                            <font style="font-size: 15px;">
+                                &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;Food & Cloth <br>
+                                &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;Distribution</font>
+                        </td>
+                        <td>
+                            &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;
+                            <img src="https://cdn.iconscout.com/icon/free/png-64/wheelchair-3602279-3005813.png"
+                                width="70px" height="60px" alt=""> <br>
+                            <font style="font-size: 15px;">
+                                &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;Operation of <br>
+                                &emsp; &emsp; &emsp;&emsp; &emsp; &emsp;Differently Abled</font>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+
+        <div>
+            <center>
+                <font style="font-size: 40px;">
+                    CHANGING LIVES AND MAKING DIFFERENCES
+                </font>
+            </center>
+            <br>
+            <br>
+            <!-------++++++++++++++++++++++++++++++++++++++++++++++++ TABLE1+++++++++++++++++++++++++++++++++++++++++++++++++++++-------->
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="full and final.jpg" width="400px" height="500px" alt="">
+                            &emsp;&emsp;&emsp;
+                        </td>
+                        <td>
+                            <div class="line1"></div>
+                            &emsp; &emsp; &emsp; &emsp;
+                        </td>
+                        <td>
+
+                            <font style="font-size: 40px;">
+
+                                Organize Kids' Athletics Day on 7 May
+
+
+
+                            </font>
+
+                            <br>
+                            <br>
+                            <font>
+
+                            </font>
+
+                            <font style="font-size: 20px;">
+                                To mark the launch of the new Kids' Athletics programme, World Athletics will be
+                                celebrating Kids' Athletics Day on 7 May with organisations around the world.<br>
+                                The vision behind Kids' Athletics is the belief that every child is born to move, to
+                                play, to explore. No matter where they are in the world, no matter their individual
+                                circumstances, it’s their fundamental right to have access to sport.
+                            </font>
+                        </td>
+                        <br>
+                        <br>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+
+                            <font style="font-size: 40px;">
+
+                                Organize Kids' Athletics Day on 7 May
+
+
+
+                            </font>
+
+                            <br>
+                            <br>
+                            <font>
+
+                            </font>
+
+                            <font style="font-size: 20px;">
+                                To mark the launch of the new Kids' Athletics programme, World Athletics will be
+                                celebrating Kids' Athletics Day on 7 May with organisations around the world.<br>
+                                The vision behind Kids' Athletics is the belief that every child is born to move, to
+                                play, to explore. No matter where they are in the world, no matter t
+                        </td>
+                        <td>
+                            <div class="line1"></div>
+                            &emsp; &emsp; &emsp; &emsp;
+                        </td>
+                        <td>
+                            <img src="dog 🐕 FINAL with date 2 .jpg" width="400px" height="500px" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--************************************TABLE2***********************************************************-->
+            <br>
+            <br>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="2earth day.jpg" width="400px" height="500px" alt="">
+                            &emsp;&emsp;&emsp;&emsp;
+                        </td>
+                        <td>
+                            <div class="line1"></div>
+                            &emsp;&emsp;
+                        </td>
+                        <td>
+                            <font style="font-size: 40px;">
+
+                                Organize Kids' Athletics Day on 7 May
+
+
+
+                            </font>
+
+                            <br>
+                            <br>
+                            <font>
+
+                            </font>
+
+                            <font style="font-size: 20px;">
+                                To mark the launch of the new Kids' Athletics programme, World Athletics will be
+                                celebrating Kids' Athletics Day on 7 May with organisations around the world.<br>
+                                The vision behind Kids' Athletics is the belief that every child is born to move, to
+                                play, to explore. No matter where they are in the world, no matter t
+
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <br>
+            <br>
+            <font style="font-size: 40px;">
+                As Per Above Aslo we Conduct Many program As below :-
+            </font>
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <td>
+                        &emsp;&emsp;&emsp;
+                        <img src="Pain free trees 2 .jpg" width="300px" height="350px" alt="">
+                        &emsp;
+                    </td>
+                    <td>
+                        <div class="line1"></div>
+                    </td>
+                    <td>
+                        &emsp;
+                        <img src="sanitary awareness 3.3.jpg" width="300px" height="350px" alt="">
+                        &emsp;
+                    </td>
+                    <td>
+                        <div class="line1"></div>
+                    </td>
+                    <td>
+                        &emsp;
+                        <img src="World Food Safety Day 2-Recovered.jpg" width="300px" height="350px" alt="">
+                        &emsp;
+                    </td>
+                    <td>
+                        <div class="line1"></div>
+                    </td>
+                    <td>
+                        &emsp;
+                        <img src="women's equality day 9.jpg" width="300px" height="350px" alt="">
+                        &emsp;
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="frame7">
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <center>
+                <table>
+                    <tr>
+                        <td>
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                            <img src="https://cdn.iconscout.com/icon/free/png-64/wheelchair-3602279-3005813.png"
+                                width="100px" height="100px" alt=""><br>
+                            <font style="font-size:20px">
+                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 2,75,803<br>
+                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Distribution
+                                of<br>
+                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Wheel Chairs
+                            </font>
+
+                        </td>
+
+                        <td>
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                            <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/meal-5188022-4326230.png"
+                                width="100px " height="100px" alt=""><br>
+                            <font style="font-size: 20px;">
+                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;3,92,53,000 <br>
+                                &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Service of
+                                Patients <br>
+                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Meals
+
+                            </font>
+                        </td>
+                        <td>
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                            <img src="https://cdn.iconscout.com/icon/free/png-64/clothes-1748567-1491657.png"
+                                width="100px" height="100px" alt=""> <br>
+                            <font style="font-size: 20px;">
+                                &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2,70,97,320
+                                <br>
+                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;Distribution
+                                <br>
+                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;of Clothes
+                            </font>
+                        </td>
+                        <td>
+                            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                            <img src="https://cdn.iconscout.com/icon/premium/png-64-thumb/blanket-3808821-3172499.png"
+                                width="100px" height="100px" alt=""> <br>
+                            <font style="font-size: 20px;">
+                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 1,92,000 <br>
+                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp;Blanket <br>
+                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Distribution
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div class="end1">
+                <img src="https://cdn.iconscout.com/icon/free/png-64/thanks-4351787-3608690.png" width="70px"
+                    height="70px" alt="">
+                Thank You
+                <br>
+                Charity Efforts are for Happiness
+
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
